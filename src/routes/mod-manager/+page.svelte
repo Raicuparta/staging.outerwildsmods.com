@@ -8,6 +8,7 @@
 	import DebianIcon from '$lib/components/icons/debian-icon.svelte';
 	import ArchIcon from '$lib/components/icons/arch-icon.svelte';
 	import AppImageIcon from '$lib/components/icons/app-image-icon.svelte';
+	import FlatpakIcon from '$lib/components/icons/flatpak-icon.svelte';
 	import type { PageData } from './$types';
 	// import NixIcon from '$lib/components/icons/nix-icon.svelte';
 
@@ -47,11 +48,15 @@
 					</CtaButton>
 				</div>
 				<!-- Waiting on PR approval for FlatHub -->
-				<!-- <div class="my-2">
-					<CtaButton href="https://flathub.org/apps/com.outerwildsmods.owmods_gui" rel="noopener noreferrer">
-						Flatpak for Linux (Steam Deck)
+				<div class="my-2">
+					<CtaButton
+						href="https://flathub.org/apps/com.outerwildsmods.owmods_gui"
+						rel="noopener noreferrer"
+					>
+						<FlatpakIcon />
+						Flatpak for Linux (Use This On Steam Deck)
 					</CtaButton>
-				</div> -->
+				</div>
 				<!-- Waiting on Loco to make a Nix pkg for the GUI -->
 				<!-- <div class="my-2">
 					<CtaButton href={aurUrl} rel="noopener noreferrer">
